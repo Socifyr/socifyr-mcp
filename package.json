@@ -1,0 +1,66 @@
+{
+  "name": "@socifyr/mcp",
+  "version": "0.2.0",
+  "description": "MCP server for Socifyr, the social publishing API for teams and AI agents. Post from Claude, Cursor, ChatGPT and other AI tools",
+  "license": "AGPL-3.0-or-later",
+  "bin": {
+    "socifyr-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./tools": {
+      "types": "./dist/tools.d.ts",
+      "import": "./dist/tools.mjs",
+      "require": "./dist/tools.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "tools": [
+        "./dist/tools.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@socifyr/sdk": "^0.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "socifyr",
+    "mcp",
+    "social-media",
+    "claude",
+    "ai-agents",
+    "model-context-protocol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Socifyr/socifyr-mcp"
+  },
+  "homepage": "https://socifyr.com/docs/mcp",
+  "bugs": {
+    "url": "https://github.com/Socifyr/socifyr-mcp/issues"
+  }
+}
