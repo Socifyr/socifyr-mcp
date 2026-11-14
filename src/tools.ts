@@ -54,7 +54,7 @@ export function registerAllTools(
           return {
             content: [{
               type: 'text',
-              text: 'No connected social accounts found. Connect accounts at https://socifyr.com/dashboard/integrations',
+              text: 'No connected social accounts found. Connect accounts at https://app.socifyr.com/dashboard/accounts',
             }],
           }
         }

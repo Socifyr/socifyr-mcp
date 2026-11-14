@@ -1,6 +1,6 @@
 {
   "name": "@socifyr/mcp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "MCP server for Socifyr, the social publishing API for teams and AI agents. Post from Claude, Cursor, ChatGPT and other AI tools",
   "license": "AGPL-3.0-or-later",
   "bin": {
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "@socifyr/sdk": "^0.2.0",
+    "@socifyr/sdk": "^0.3.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {

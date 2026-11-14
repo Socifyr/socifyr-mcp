@@ -10,10 +10,10 @@ The server is configured entirely via environment variables:
 
 | Variable | Required | Description |
 |---|---|---|
-| `SOCIFYR_API_KEY` | ✅ | API key (`sk_...`) — create at https://socifyr.com/dashboard/integrations#api-keys |
+| `SOCIFYR_API_KEY` | ✅ | API key (`sk_...`) — create at https://app.socifyr.com/dashboard/integrations#api-keys |
 | `SOCIFYR_API_URL` | — | Custom API URL (self-hosted); defaults to the hosted API |
 
-The API key belongs to one workspace, and the server always works in that workspace. `SOCIFYR_WORKSPACE_ID` is no longer read.
+The API key belongs to one workspace, and the server always works in that workspace.
 
 ### Claude Desktop
 
